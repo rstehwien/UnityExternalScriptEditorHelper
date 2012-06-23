@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <!-- The Following is For Windows -->
+    <application><![CDATA[C:\Program Files\Sublime Text 2\sublime_text.exe]]></application>
+    <!-- The Following is for OSX 
+    <application><![CDATA["/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"]]></application>
+    -->
+    <arguments><![CDATA["*file*":*line*]]></arguments>
+</config>
+

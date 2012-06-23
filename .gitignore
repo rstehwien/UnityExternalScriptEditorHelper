@@ -1,6 +1,18 @@
-# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Temp Files
+*~
+
+#MonoDevelop
+*.pidb
+*.userprefs
+*.usertasks
+*.resources
+test-results
 bin
 obj
-
-# mstest test results
-TestResults
+*.sublime-project
+*.sublime-workspace
+TestResult.xml
