@@ -38,11 +38,12 @@ public static void Main(string[] args)
     launchArguments = launchArguments.Replace("*line*", launchLine);
     
     File.AppendAllText(logPath, "*****Launching*****"+Environment.NewLine);
-    File.AppendAllLines(logPath, new string[] {launchApplication, launchArguments});
+    File.AppendAllLines(logPath, new string[] {launchApplication, " ", launchArguments});
     
     // Launch the app    
     System.Diagnostics.Process proc = new System.Diagnostics.Process();
     proc.EnableRaisingEvents = false; 
+    proc.StartInfo.UseShellExecute = false;
     proc.StartInfo.FileName = launchApplication;
     proc.StartInfo.Arguments = launchArguments;
     proc.Start();
